@@ -26,15 +26,15 @@
         var scrollto = target.offset().top;
         var scrolled = 20;
 
-        if ($('#header').length) {
-          scrollto -= $('#header').outerHeight()
+        if ($('#home').length) {
+          scrollto -= $('#home').outerHeight()
 
-          if (!$('#header').hasClass('header-scrolled')) {
+          if (!$('#home').hasClass('header-scrolled')) {
             scrollto += scrolled;
           }
         }
 
-        if ($(this).attr("href") == '#header') {
+        if ($(this).attr("href") == '#home') {
           scrollto = 0;
         }
 
@@ -115,17 +115,17 @@
     });
   });
 
-  // Toggle .header-scrolled class to #header when page is scrolled
+  // Toggle .header-scrolled class to #home when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
+      $('#home').addClass('header-scrolled');
     } else {
-      $('#header').removeClass('header-scrolled');
+      $('#home').removeClass('header-scrolled');
     }
   });
 
   if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
+    $('#home').addClass('header-scrolled');
   }
 
   // Back to top button
@@ -174,6 +174,16 @@
     easing: "ease-in-out",
     once: true,
     mirror: false
+  });
+
+  $(".owl-carousel").owlCarousel({
+    autoplay: true,
+    loop: true,
+    items: 1,
+    nav: true,
+    slideTransition: 'ease-in-out',
+    navContainerClass: 'carousel-control',
+    navClass: ['carousel-control-prev', 'carousel-control-next']
   });
 
 })(jQuery);

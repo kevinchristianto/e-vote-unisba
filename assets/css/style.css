@@ -113,19 +113,19 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+#home {
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
 }
 
-#header.header-scrolled {
+#home.header-scrolled {
   background: rgba(31, 88, 165, .9);
   height: 60px;
 }
 
-#header .logo h1 {
+#home .logo h1 {
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -133,22 +133,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-#header .logo h1 a, #header .logo h1 a:hover {
+#home .logo h1 a, #home .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-#header .logo img {
+#home .logo img {
   padding: 0;
   margin: 0;
   max-height: 40px;
 }
 
 @media (max-width: 992px) {
-  #header {
+  #home {
     height: 64px;
   }
-  #header .logo h1 {
+  #home .logo h1 {
     font-size: 28px;
   }
 }
@@ -448,9 +448,33 @@ h1, h2, h3, h4, h5, h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+/* #hero .carousel-control {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+} */
+
+#hero .carousel-control-prev, #hero .carousel-control-next {
+  width: 10%;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 48px;
+}
+#hero .carousel-control-prev {
+  margin-left: -48px;
+}
+#hero .carousel-control-next {
+  margin-right: -48px;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 5%;
   }
 }
 
@@ -683,7 +707,7 @@ section {
   margin-left: 85px;
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about .icon-box .title a {
@@ -702,9 +726,10 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.png") center center no-repeat;
-  background-size: contain;
+  /* background: url("../svg/undraw_google_docs_jf93.svg") center center no-repeat;
+  background-size: contain; */
   min-height: 300px;
+  /* max-height: 480px; */
 }
 
 .about .play-btn {

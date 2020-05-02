@@ -50,7 +50,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route = [
-    'default_controller' => 'menu',
+    'default_controller' => 'home',
     '404_override' => '',
-    'translate_uri_dashes' => FALSE
+    'translate_uri_dashes' => FALSE,
+    'login' => 'home/login',
+    'logout' => 'menu/logout',
+    'auth' => 'home/auth',
+    'menu/dashboard' => 'menu/index',
+    'menu/jurusan' => 'menu/index_jurusan',
 ];

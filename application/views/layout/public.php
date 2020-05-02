@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Home &mdash; E-Vote UNISBA</title>
+  <title>Home &mdash; E-Vote BPPRFikom</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?= base_url(); ?>assets/img/favicon.png" rel="icon">
+  <link href="<?= base_url(); ?>assets/img/logo/favicon.png" rel="icon">
   <link href="<?= base_url(); ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -39,41 +39,28 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header id="home" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>E-Vote UNISBA</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>E-Vote BPPRFikom</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="<?= base_url(); ?>assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#aturan">Aturan</a></li>
+          <li><a href="#landasan">Landasan</a></li>
+          <li><a href="#organisasi">Organisasi</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li class="drop-down"><a href="">Akun</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              <li><a href="<?= base_url('/login'); ?>">Masuk</a></li>
+              <li><a href="#">Daftar</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -83,14 +70,29 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
 
-    <div class="container">
+    <div class="container owl-carousel">
       <div class="row">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out">
-            <h1>E-Voting <span>UNISBA</span></h1>
-            <h2>Baca syarat dan ketentuan dibawah ini<br>sebelum melanjutkan</h2>
+            <h1>E-Voting <span>BPPRFikom</span></h1>
+            <h2>Baca aturan pemilihan dibawah ini<br>sebelum melanjutkan</h2>
             <div class="text-center text-lg-left">
-              <a href="#about" class="btn-get-started scrollto">Syarat dan Ketentuan</a>
+              <a href="#aturan" class="btn-get-started scrollto">Aturan Pemilihan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="<?= base_url(); ?>assets/svg/undraw_voting_nvu7.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>E-Voting <span>BPPRFikom</span></h1>
+            <h2>Baca aturan pemilihan dibawah ini<br>sebelum melanjutkan</h2>
+            <div class="text-center text-lg-left">
+              <a href="#aturan" class="btn-get-started scrollto">Aturan Pemilihan</a>
             </div>
           </div>
         </div>
@@ -114,40 +116,52 @@
         <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
       </g>
     </svg>
-
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="aturan" class="about">
       <div class="container-fluid">
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+              <img src="<?= base_url(); ?>assets/svg/undraw_accept_terms_4in8.svg" class="img-fluid container" style="padding-left: 40px; padding-right: 40px;" />
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <h3>Aturan Pemilihan</h3>
+            <p>Sebelum memilih, harap perhatikan dengan baik dibawah ini beberapa aturan dalam pemilihan.</p>
 
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon"><i class="bx bx-user-check"></i></div>
+              <h4 class="title" style="position: relative; bottom: -12px">Pemilihan hanya dapat dilakukan oleh mahasiswa aktif yang terdaftar pada Fikom UNISBA pada tahun ajaran 2019-2020</h4>
             </div>
 
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <div class="icon"><i class="bx bx-hourglass"></i></div>
+              <h4 class="title" style="position: relative; bottom: -20px">Jam operasional website untuk memilih adalah pada pukul 09.00-18.00</h4>
             </div>
 
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+              <div class="icon"><i class="bx bx-error"></i></div>
+              <h4 class="title" style="position: relative; bottom: -12px">Setiap peserta hanya bisa login 1 kali, sistem akan memblokir login setelahnya secara otomatis</h4>
+              <!-- <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p> -->
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-filter"></i></div>
+              <h4 class="title" style="position: relative; bottom: -2px;">Angkatan 2019 hanya dapat memilih lembaga BEM & DAM, sedangkan angkatan diatasnya dapat memilih lembaga lain yang tersedia sesuai dengan jurusannya</h4>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-message-square-detail"></i></div>
+              <h4 class="title" style="position: relative; bottom: -2px;">Untuk angkatan diatas tahun 2016, diharapkan untuk menghubungi Official Account terlebih dahulu untuk mendapatkan akses menuju web</h4>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-trash"></i></div>
+              <h4 class="title" style="position: relative; bottom: -12px;">Jika terbukti ditemukan kecurangan dalam pemilihan, maka suara tersebut dianggap tidak sah</h4>
             </div>
 
           </div>
@@ -155,93 +169,6 @@
 
       </div>
     </section><!-- End About Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <p>Check The Features</p>
-        </div>
-
-        <div class="row" data-aos="fade-left">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Sed perspiciatis</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Magni Dolores</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Nemo Enim</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Eiusmod Tempor</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Midela Teren</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Pira Neve</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="450">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Dirada Pack</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="500">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Moton Ideal</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="550">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Verdo Park</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="600">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -251,33 +178,33 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
+              <i class="bx bx-user"></i>
+              <span data-toggle="counter-up">1700</span>
+              <p>Jumlah Pemilih</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
+              <i class="bx bx-user-check"></i>
+              <span data-toggle="counter-up">1400</span>
+              <p>Sudah Memilih</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
+              <i class="bx bx-user-x"></i>
+              <span data-toggle="counter-up">300</span>
+              <p>Belum Memilih</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
+              <i class="bx bx-user-pin"></i>
+              <span data-toggle="counter-up">12</span>
+              <p>Jumlah Calon</p>
             </div>
           </div>
 
@@ -287,178 +214,51 @@
     </section><!-- End Counts Section -->
 
     <!-- ======= Details Section ======= -->
-    <section id="details" class="details">
+    <section id="organisasi" class="details">
       <div class="container">
 
         <div class="row content">
-          <div class="col-md-4" data-aos="fade-right">
-            <img src="<?= base_url(); ?>assets/img/details-1.png" class="img-fluid" alt="">
+          <div class="col-md-2 offset-md-2" data-aos="fade-right">
+            <img src="<?= base_url(); ?>assets/img/logo/DAM.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-8 pt-4" data-aos="fade-up">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
-              <li><i class="icofont-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
-            </ul>
-            <p>
-              Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
-            </p>
+          <div class="col-md-6 my-auto" data-aos="fade-up">
+            <h3>Dewan Amanat Mahasiswa</h3>
+            <h6>Dewan Amanat Mahasiswa (DAM) Fakultas Ilmu Komunikasi adalah lembaga Legislatif tertinggi Mahasiswa di tingkat Fakultas Ilmu Komunikasi sebagai lembaga yang mengontrol pelaksanaan kegiatan dan kebijakan Badan Eksekutif Mahasiswa Fikom Unisba</h6>
           </div>
         </div>
 
         <div class="row content">
-          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            <img src="<?= base_url(); ?>assets/img/details-2.png" class="img-fluid" alt="">
+          <div class="col-md-2 order-1 order-md-2" data-aos="fade-left">
+            <img src="<?= base_url(); ?>assets/img/logo/BEM.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <p>
-              Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse. Saepe aut dignissimos distinctio id enim.
-            </p>
+          <div class="col-md-6 offset-md-2 my-auto order-2 order-md-1" data-aos="fade-up">
+            <h3 style="text-align: end;">Badan Eksekutif Mahasiswa</h3>
+            <h6 style="text-align: end;">BEM Fikom Unisba adalah Lembaga Eksekutif Mahasiswa tertinggi di tingkat fakultas yang melaksanakan dan mengkoordinir kegiatan mahasiswa di tingkat Fakultas</h6>
           </div>
         </div>
 
         <div class="row content">
-          <div class="col-md-4" data-aos="fade-right">
-            <img src="<?= base_url(); ?>assets/img/details-3.png" class="img-fluid" alt="">
+          <div class="col-md-2 offset-md-2" data-aos="fade-right">
+            <img src="<?= base_url(); ?>assets/img/logo/HIMA.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-8 pt-5" data-aos="fade-up">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
-            <p>
-              Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil magni debitis consequatur est.
-            </p>
-            <p>
-              Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta explicabo vel fugiat eum non.
-            </p>
+          <div class="col-md-6 my-auto" data-aos="fade-up">
+            <h3>Himpunan Mahasiswa Public Relations</h3>
+            <h6>Himpunan Mahasiswa Public Relations (HIMA PR) Fikom Unisba merupakan lembaga eksekutif mahasiswa di tingkat jurusan yang berfungsi sebagai lembaga kegiatan mahasiswa di lingkungan jurusan Public Relations Fikom Unisba</h6>
           </div>
         </div>
 
         <div class="row content">
-          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            <img src="<?= base_url(); ?>assets/img/details-4.png" class="img-fluid" alt="">
+          <div class="col-md-2 order-1 order-md-2" data-aos="fade-left">
+            <img src="<?= base_url(); ?>assets/img/logo/KMMK.png" class="img-fluid" alt="">
           </div>
-          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul>
-              <li><i class="icofont-check"></i> Et praesentium laboriosam architecto nam .</li>
-              <li><i class="icofont-check"></i> Eius et voluptate. Enim earum tempore aliquid. Nobis et sunt consequatur. Aut repellat in numquam velit quo dignissimos et.</li>
-              <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
+          <div class="col-md-6 offset-md-2 my-auto order-2 order-md-1" data-aos="fade-up">
+            <h3 style="text-align: end;">Keluarga Mahasiswa Manajemen Komunikasi</h3>
+            <h6 style="text-align: end;">Keluarga Mahasiswa Manajemen Komunikasi (KMMK) Fikom Unisba berada dibawah Bidang Kajian Manajemen Komunikasi (Mankom) yang berfungsi dalam menjembatani antara warga Mankom dengan bidang kajian atau fakultas itu sendiri</h6>
           </div>
         </div>
 
       </div>
     </section><!-- End Details Section -->
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Gallery</h2>
-          <p>Check our Gallery</p>
-        </div>
-
-        <div class="row no-gutters" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-2.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-3.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-4.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
-              <a href="<?= base_url(); ?>assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-item">
-                <img src="<?= base_url(); ?>assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -665,7 +465,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Universitas Islam Bandung</span></strong>. All Rights Reserved
+        Hak Cipta &copy; <strong><span>Badan Penyelenggara Pemilu Raya Fakultas Ilmu Komunikasi<br>Universitas Islam Bandung</span></strong>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
