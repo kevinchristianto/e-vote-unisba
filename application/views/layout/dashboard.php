@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <base href="<?= base_url(); ?>">
 
   <title><?= $title; ?> &mdash; E-Vote BPPRFikom</title>
 
@@ -63,9 +64,9 @@
         <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item <?= isset($jurusan) ? $jurusan : null ?>" href="<?= base_url('menu/jurusan'); ?>">Jurusan</a>
-            <a class="collapse-item" href="register.html">Kelas</a>
-            <a class="collapse-item" href="forgot-password.html">Calon</a>
-            <a class="collapse-item" href="">Pemilih</a>
+            <a class="collapse-item <?= isset($kelas) ? $kelas : null ?>" href="<?= base_url('menu/kelas'); ?>">Kelas</a>
+            <a class="collapse-item <?= isset($calon) ? $calon : null ?>" href="<?= base_url('menu/calon'); ?>">Calon</a>
+            <a class="collapse-item <?= isset($pemilih) ? $pemilih : null ?>" href="<?= base_url('menu/pemilih'); ?>">Pemilih</a>
           </div>
         </div>
       </li>
@@ -179,18 +180,6 @@
     </div>
   </div>
 
-  <div class="modal fade" id="loading-modal">
-    <div class="modal-dialog modal-dialog-centered" style="width: 10rem; height: 10rem;">
-      <div class="modal-content">
-        <div class="modal-body d-flex justify-content-center">
-          <div class="spinner-grow text-primary" role="status" style="width: 8rem; height: 8rem">
-            <span class="sr-only">Loading...</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript-->
   <script src="<?= base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
   <script src="<?= base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -198,15 +187,36 @@
   <!-- Core plugin JavaScript-->
   <script src="<?= base_url(); ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Swal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.12/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Custom file input -->
+  <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+
   <!-- Custom scripts for all pages-->
   <script src="<?= base_url(); ?>assets/js/sb-admin-2.js"></script>
 
   <!-- App script -->
   <script src="<?= base_url(); ?>assets/js/app.js"></script>
   
-  <!-- Dashboard script -->
   <?php if ($this->uri->segment(2) == 'dashboard') { ?>
+    <!-- Dashboard script -->
     <script src="<?= base_url(); ?>assets/js/dashboard.js"></script>
+  <?php } ?>
+
+  <?php if ($this->session->flashdata('error') || $this->session->flashdata('success')) { ?>
+    <script>
+      Swal.fire({
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 5000,
+        toast: true,
+        timerProgressBar: true,
+        icon: '<?= $this->session->flashdata("error") ? "error" : "success"; ?>',
+        title: '<?= $this->session->flashdata("error") ? "Gagal!" : "Berhasil!"; ?>',
+        text: '<?= $this->session->flashdata("error") ? $this->session->flashdata("error") : $this->session->flashdata("success"); ?>',
+      })
+    </script>
   <?php } ?>
 
 </body>

@@ -42,11 +42,14 @@ class Home extends CI_Controller {
 
             redirect(base_url('menu/dashboard'));
         } else if ($check['error'] == 'username') {
-            
+            $this->session->set_flashdata('error', 'Username yang anda masukkan salah');
+            redirect(base_url('login'));
         } else if ($check['error'] == 'password') {
-
+            $this->session->set_flashdata('error', 'Password yang anda masukkan salah');
+            redirect(base_url('login'));
         } else if ($check['error'] == 'inactive') {
-
+            $this->session->set_flashdata('error', 'Akun anda tidak aktif');
+            redirect(base_url('login'));
         }
     }
 

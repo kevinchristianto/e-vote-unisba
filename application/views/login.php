@@ -71,9 +71,27 @@
 
   <!-- Core plugin JavaScript-->
   <script src="<?= base_url(); ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+  <!-- Swal -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.12/dist/sweetalert2.all.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="<?= base_url(); ?>assets/js/sb-admin-2.min.js"></script>
+
+  <?php if ($this->session->flashdata('error') || $this->session->flashdata('success')) { ?>
+    <script>
+      Swal.fire({
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 5000,
+        toast: true,
+        timerProgressBar: true,
+        icon: '<?= $this->session->flashdata("error") ? "error" : "success"; ?>',
+        title: '<?= $this->session->flashdata("error") ? "Gagal!" : "Berhasil!"; ?>',
+        text: '<?= $this->session->flashdata("error") ? $this->session->flashdata("error") : $this->session->flashdata("success"); ?>',
+      })
+    </script>
+  <?php } ?>
 
 </body>
 
